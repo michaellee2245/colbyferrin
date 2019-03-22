@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+  z-index: 99;
 }
 .svg-wrapper {
   height: 100%;
@@ -101,10 +102,4 @@
 .is_selected span {
   opacity: 1 !important;
 }
-.home-container{
-    height:100vh;
-    width:100vw;
-    background-color:purple;
-    position: relative;
-    z-index: 1;
-}
+
