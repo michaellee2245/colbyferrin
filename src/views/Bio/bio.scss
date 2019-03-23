@@ -179,10 +179,14 @@
 
   .material-icons {
     display: unset;
+    color: white;
   }
 
   .icon-background {
     display: unset;
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 40px;
+    width: 40px;
   }
 }
 

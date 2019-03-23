@@ -126,7 +126,7 @@ class Bio extends Component {
                         </div>
                         <div className="bio-title-2">
                             <h2>My</h2>
-                            <h1>Struggle</h1>
+                            <h1>Passion</h1>
                         </div>
                     </div>
                     <div
