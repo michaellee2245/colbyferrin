@@ -45,12 +45,15 @@ class Bio extends Component {
         // const icon = openOne ? 'icon-1' : (openTwo ? 'icon-2' : (openThree ? 'icon-3' : null));
 
 
-        if (this.state.openOne) {
-            $('.section-1').css({ 'width': '150%' })
-            $(".icon-1").css('transform', 'rotate(225deg)')
+        if (this.state.openOne === true) {
+            $('.section-1').css({ 'width': '350%' })
+            $(".icon-1").css('transform', 'rotate(45deg)')
             $('.overlay-1').css({ 'background-color': 'rgba(0, 0, 0, 0.0)' })
             $('.text-section-1').css({ 'opacity': '1' })
-            $('.text-section-1').css({ 'transition': 'all, ease, 0.5s' })
+            $('.text-section-1').css({ 'transition': 'all, ease, 2s' })
+
+            $('.overlay-2').css({ 'background-color': 'rgb(0, 0, 0) !important' })
+            $('.overlay-3').css({ 'background-color': 'rgb(0, 0, 0) !important' })
         }
         else {
             $(".section-1").css({ 'width': '33.3%' })
@@ -61,11 +64,14 @@ class Bio extends Component {
         }
 
         if (this.state.openTwo) {
-            $('.section-2').css({ 'width': '150%' })
-            $('.icon-2').css('transform', 'rotate(225deg)')
+            $('.section-2').css({ 'width': '350%' })
+            $('.icon-2').css('transform', 'rotate(45deg)')
             $('.overlay-2').css({ 'background-color': 'rgba(0, 0, 0, 0.0)' })
             $('.text-section-2').css({ 'opacity': '1' })
             $('.text-section-2').css({ 'transition': 'all, ease, 0.5s' })
+
+            $('.overlay-1').css({ 'background-color': 'rgba(0, 0, 0, 0.95)' })
+            $('.overlay-3').css({ 'background-color': 'rgba(0, 0, 0, 0.95)' })
         }
         else {
             $('.section-2').css({ 'width': '33.3%' })
@@ -77,11 +83,14 @@ class Bio extends Component {
         }
 
         if (this.state.openThree) {
-            $('.section-3').css({ 'width': '150%' })
-            $('.icon-3').css('transform', 'rotate(225deg)')
+            $('.section-3').css({ 'width': '350%' })
+            $('.icon-3').css('transform', 'rotate(45deg)')
             $('.overlay-3').css({ 'background-color': 'rgba(0, 0, 0, 0.0)' })
             $('.text-section-3').css({ 'opacity': '1' })
             $('.text-section-3').css({ 'transition': 'all, ease, 0.5s' })
+
+            $('.overlay-1').css({ 'background-color': 'rgba(0, 0, 0, 0.95)' })
+            $('.overlay-2').css({ 'background-color': 'rgba(0, 0, 0, 0.95)' })
 
         }
         else {
