@@ -1,3 +1,7 @@
+body{
+  background:black;
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
 }
@@ -30,4 +34,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+::-webkit-scrollbar{
+  background:transparent;
 }

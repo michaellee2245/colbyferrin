@@ -1,105 +1,25 @@
 .home-container {
   height: 100vh;
   width: 100vw;
-  background-image: url("../assets/landing-edit.jpg");
+  background-image: url(../assets/colby-landing-66-edit.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   z-index: 99;
+  position: relative;
 }
-.svg-wrapper {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  &:hover #Symbol_1_1 path {
-    transition: 0.5s;
-    d: path("M49.86,500.785V55.584H1892.9v997.266H999.342l-25.552,26.216-27.169-26.216H49.86V801.22");
-  }
-}
 
 .name-box {
   height: 125px;
-  width: 800px;
+  width: 600px;
   //   background-color:green;
   background-image: url("../assets/colby-ferrin.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1099;
   position: absolute;
-  top: 50%;
+  top: 90%;
   right: 4%;
   transform: translate(0%, -70%);
 }
-.nav_container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.page_nav {
-  // width:20px;
-  height: 200px;
-  list-style: none;
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  // padding-right: 45px;
-  z-index: 1000;
-  // opacity: .5;
-  background-color: pink;
-
-}
-.list-section{
-    display: flex;
-    justify-content: center;
-}
-.page_nav li {
-//   height: 17%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  // width:35px;
-  //   opacity: 0.25;
-  font-family: rift, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  color: white;
-  transition: opacity 0.5s;
-  font-size: 2em;
-  /* width:5px;
-    height:20%;
-    background-color:rgb(27, 236, 27); */
-}
-.page_nav li:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-.page_nav li span {
-  font-family: rift, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: .75em;
-  margin-left: 10%;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.page_nav li:hover span {
-  opacity: 1;
-}
-.is_selected {
-  opacity: 1 !important;
-}
-.is_selected span {
-  opacity: 1 !important;
-}
-
