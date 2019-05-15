@@ -1,0 +1,49 @@
+// SECTION 1 STYLES
+
+.section-1-open,
+.section-2-open,
+.section-3-open {
+  height: 100vh;
+  width: 70vw;
+}
+
+.section-1-small,
+.section-2-small,
+.section-3-small {
+  height: 100vh;
+  width: 15vw;
+}
+
+.icon-1-open,
+.icon-2-open,
+.icon-3-open {
+  transform: rotate(225deg);
+}
+
+.overlay-1-open,
+.overlay-2-open,
+.overlay-3-open {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.text-section-1-open,
+.text-section-2-open,
+.text-section-3-open {
+  opacity: 1;
+  transition: all ease 0.5s;
+}
+
+@media only screen and (max-width: 980px) {
+  .section-1-open,
+  .section-2-open,
+  .section-3-open {
+    height: 70vh !important;
+    width: 100% !important;
+  }
+  .section-1-small,
+  .section-2-small,
+  .section-3-small {
+    height: 15vh !important;
+    width: 100%;
+  }
+}

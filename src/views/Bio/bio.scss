@@ -12,7 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 1000000;
+  // z-index: 1000000;
   transition: all ease 0.7s;
   position: relative;
 }
@@ -20,7 +20,6 @@
 .section-1 {
   background-image: url("../assets/section-1.jpg");
   background-position: 75%;
-
 }
 
 .section-2 {
@@ -46,12 +45,9 @@
 .text-wrapper-2,
 .text-wrapper-3 {
   width: 100%;
+  height: 35%;
   margin: auto;
-  position: absolute;
-  bottom: 80px;
-}
-
-.text-wrapper-1 {
+  padding: 30px 0;
   
 }
 
@@ -59,10 +55,10 @@
 .text-section-2,
 .text-section-3 {
   width: 100%;
-  padding: 30px;
   margin: auto;
-  opacity: .0;
-  transition: all ease 1s;
+  padding: 30px 0;
+  opacity: 0;
+  transition: all ease .2s;
   p {
     font-size: 20px;
   }
@@ -73,13 +69,14 @@
   color: white;
   width: 800px;
   margin: auto;
+  z-index: 5;
 }
 
 .icon-background {
   display: unset;
   height: 40px;
   width: 50px;
-
+  z-index: 10000000;
 }
 
 .material-icons {
@@ -89,9 +86,63 @@
   cursor: pointer;
 }
 
-
 // .text-section-1 {
 //   width: 70%;
 //   margin: 100px auto;
 // }
 
+@media only screen and (max-width: 1650px) {
+  .info-text {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .bio-container {
+    flex-direction: column;
+  }
+  .section-1,
+  .section-2,
+  .section-3 {
+    width: 100vw;
+    height: 33.3%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all ease 0.7s;
+    position: relative;
+  }
+  .overlay-1,
+  .overlay-2,
+  .overlay-3 {
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    transition: all ease 1s;
+  }
+  .text-wrapper-1,
+  .text-wrapper-2,
+  .text-wrapper-3 {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 100px;
+  }
+  .text-section-1,
+  .text-section-2,
+  .text-section-3 {
+    height: 100%;
+  }
+  .info-text {
+    width: 80%;
+  }
+  p {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  p {
+    font-size: 12px !important;
+  }
+}
