@@ -13,7 +13,8 @@
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1000;
-  transition: all ease 2s;
+  transition: all ease 1s;
+  transition-delay: .5s;
   position: relative;
 }
 

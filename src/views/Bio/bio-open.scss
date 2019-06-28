@@ -4,16 +4,25 @@
 .section-2-open,
 .section-3-open {
   height: 100vh;
-  width: 70vw;
+  width: 100vw;
 }
 
 .section-1-small,
 .section-2-small,
 .section-3-small {
   height: 100vh;
-  width: 15vw;
+  width: 0vw;
 }
 
+.section-1-small{
+  animation: slideUp .5s;
+}
+.section-2-small{
+  animation: slideDown .5s;
+}
+.section-3-small{
+  animation: slideDown .5s;
+}
 .icon-1-open,
 .icon-2-open,
 .icon-3-open {
@@ -45,5 +54,27 @@
   .section-3-small {
     height: 15vh !important;
     width: 100%;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    // transform: translateY(0%);
+  }
+  100%{
+    opacity: 0;
+    // transform:translateY(-100%);
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 1;
+    // transform: translateY(0%);
+
+  }
+  100%{
+    opacity: 0;
+    // transform:translateY(100%);
   }
 }
