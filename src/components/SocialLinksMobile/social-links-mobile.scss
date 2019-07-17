@@ -1,0 +1,77 @@
+.social-container-mobile {
+  width: 200px;
+  background-color: rgba(255, 153, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vh;
+}
+
+.icon-mobile {
+  height: 20px;
+  margin: 8px 3px;
+  color: rgba(230, 230, 230, 0.582);
+  opacity: 1;
+  &:hover {
+    color: rgba(228, 228, 228, 0.973);
+    cursor: pointer;
+  }
+}
+
+#facebook-open,
+#twitter-open,
+#instagram-open,
+#youtube-open,
+#itunes-open,
+#spotify-open {
+    // opacity: 1;
+    transform: scale(1);
+}
+
+#twitter-open {
+    transition: transform .1s linear .7s;
+}
+#facebook-open {
+    transition: transform .1s linear .75s;
+}
+#instagram-open {
+    transition: transform .1s linear .80s;
+}
+#itunes-open {
+    transition: transform .1s linear .85s;
+}
+#youtube-open {
+    transition: transform .1s linear .9s;
+}
+#spotify-open {
+    transition: transform .1s linear .95s;
+}
+
+#facebook-closed,
+#twitter-closed,
+#instagram-closed,
+#youtube-closed,
+#itunes-closed,
+#spotify-closed {
+    // opacity: 0;
+    transform: scale(0);
+}
+
+#twitter-closed {
+    transition: transform .1s linear .15s;
+}
+#facebook-closed{
+    transition: transform .1s linear .12s;
+}
+#instagram-closed{
+    transition: transform .1s linear .09s;
+}
+#itunes-closed{
+    transition: transform .1s linear .06s;
+}
+#youtube-closed{
+    transition: transform .1s linear .03s;
+}
+#spotify-closed{
+    transition: transform .1s linear .0s;
+}
