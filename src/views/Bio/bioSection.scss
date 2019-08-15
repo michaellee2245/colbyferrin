@@ -1,0 +1,123 @@
+.bio-container {
+  width: calc(100%-80px);
+  height: 100vh;
+  // background-color:purple;
+  margin-left: 80px;
+  display: flex;
+  // justify-content: center;
+  // align-items:center;
+  color: white;
+  // border:1px solid white;
+  position: relative;
+}
+.section1,
+.section2,
+.section3 {
+  //   border:1px solid white;
+  height: 100%;
+  width: 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.section1 {
+  background-image: url("../assets/section-1.jpg");
+  background-position: 75%;
+}
+
+.section2 {
+  background-image: url("../assets/section-2.jpg");
+}
+
+.section3 {
+  background-image: url("../assets/section-3.jpg");
+  background-position: 45%;
+}
+.expanded-section1 {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/section-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1000;
+
+  .text-div {
+    position: absolute;
+    // left: 5%;
+    padding:0 8%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.expanded-section2 {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/section-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1000;
+
+  .text-div {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.expanded-section3 {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/section-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1000;
+
+  .text-div {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.b {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  background: transparent;
+//   border: 4px solid rgba(255, 255, 255, 0.5);
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  outline: none;
+  color:white;
+  font-size:2em;
+  border:4px solid white;
+  opacity: .5;
+
+  &:hover{
+      cursor: pointer;
+      color:orange;
+  }
+}
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+}
+.text-div {
+  width: 33.333%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  background-image: none;
+  text-align: justify;
+  
+}
