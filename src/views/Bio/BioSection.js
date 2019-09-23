@@ -19,12 +19,23 @@ class BioSection extends Component {
 
     openSection1 = () => {
         this.setState({ expandedSection1: !this.state.expandedSection1 });
+
+        $('.b').addClass('hide')
+        $('.close').removeClass('hide')
     }
     openSection2 = () => {
         this.setState({ expandedSection2: !this.state.expandedSection2 });
     }
     openSection3 = () => {
         this.setState({ expandedSection3: !this.state.expandedSection3 });
+    }
+
+    closeSection1 = () => {
+        this.setState({
+            expandedSection1: false
+        })
+        $('.b').removeClass('hide')
+        $('.close').addClass('hide')
     }
 
     render() {
@@ -48,6 +59,7 @@ class BioSection extends Component {
 
                     </div>
                     <button className="b" onClick={() => this.openSection1()}>1</button>
+                    <button className="close hide" onClick={() => this.closeSection1()}>X</button>
                 </section>
                 <section
                     className={`${this.state.expandedSection2 ? 'expanded-section2' : 'section2'}`}
