@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import SiteContainer from './components/SiteContainer/SiteContainer';
 // import Navigation from './components/Navigation/Navigation';
 import SideNav from './components/SideNav/SideNav';

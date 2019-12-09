@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 
-import './bioSection.scss';
+// import './bioSection.scss';
 
 class BioSection extends Component {
 

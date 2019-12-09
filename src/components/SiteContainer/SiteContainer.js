@@ -3,6 +3,7 @@ import Home from '../../views/Home/Home';
 import Featured from '../../views/Featured/Featured';
 import Bio from '../../views/Bio/Bio';
 import BioSection from '../../views/Bio/BioSection';
+import Biography from '../../views/Bio/Biography';
 // import Commentary from '../../views/Commentary/Commentary';
 
 
@@ -15,7 +16,8 @@ class SiteContainer extends Component{
                 
                 <Home />
                 {/* <Bio /> */}
-                <BioSection />
+                {/* <BioSection /> */}
+                <Biography />
                 <Featured />
                 
             </div>
